@@ -13,7 +13,7 @@ def bye():
 
 @app.route("/greet/<name>")
 def greeting(name):
-    return f"Hello {name}"
+    return f"<h1>Hello {name}</h1>"
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
